@@ -1,42 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Form</title>
+	<title>Pendaftaran Kompetisi</title>
+	<style type="text/css">
+	body{
+		background-image: url(dota2.jpg);
+	}
+	.badan{
+		color: white;
+		text-align: center;
+		margin-top: 100px;
+	}
+	</style>
 </head>
 <body>
-	<form>
-				<h1 align="center">FORM DATA DIRI</h1>
-				<br>
-				<pre><label for="Nama">	Nama				<input type="text" id="Nama"></label></pre>
-				<pre><label for="Alamat">	Alamat				
-					<textarea></textarea>
-				</label></pre>
-				<pre><label for="Telp">	Telpon				<input type="text" id="Telp"></label></pre>
-				<pre><label for="Jenis Kelamin">	Jenis Kelamin			<input type="radio" id="pria" name="Jenis Kelamin"><label for="pria">pria</label><input type="radio" id="wanita" name="Jenis Kelamin"><label for="wanita">wanita</label>
-				</pre>
-				</label>
-				<pre>	Agama				<select>
-						<option>Pilih :</option>
-						<option>Islam</option>
-						<option>Kristen</option>
-						<option>Katholik</option>
-						<option>Budha</option>
-						<option>Hindu</option>
-						<option>Dll</option>
+	<div class="badan" align="center">
+		<h1>Form Pendaftaran Kompetisi eSport DOTA 2</h1>
+		<form name="form" method="POST" action="proses.php">
+			<table width="25%" border="0" align="center">
+				<tr>
+					<td>Nama Lengkap</td>	
+					<td><input type="text" name="nama" id="nama"></td>
+				</tr>
+				<tr>
+					<td>Alamat</td>	
+					<td><input type="text" name="alamat" id="alamat"></td>
+				</tr>
+				<tr>
+					<td>No. Hp</td>	
+					<td><input type="text" name="nohp" id="nohp"></td>
+				</tr>
+				<tr>
+					<td>E-Mail</td>	
+					<td><input type="text" name="email" id="email"></td>
+				</tr>
+				<tr>
+					<td>Status</td>
+					<td><select name="status" id="status">
+						<option>Pilih</option>
+						<option>Belum Menikah</option>
+						<option>Menikah</option>
 					</select>
-				</pre>
-				<pre><label for="Hobby">	Hobby				</label>
-					<input type="checkbox" id="Hobby" name="Belajar">Belajar<label for="Hobby"></label>
-					<input type="checkbox" id="Hobby" name="Bermain Game">Bermain Game<label for="Hobby"></label>
-					<input type="checkbox" id="Hobby" name="Olahraga">Olahraga<label for="Hobby"></label>
-					<input type="checkbox" id="Hobby" name="Traveling">Traveling<label for="Hobby"></label>
-					<input type="checkbox" id="Hobby" name="Menyanyi">Menyanyi<label for="Hobby"></label>
-					<input type="checkbox" id="Hobby" name="Menulis">Menulis<label for="Hobby"></label>
-					<input type="checkbox" id="Hobby" name="dll">dll<label for="Hobby"></label>
-					<input type="text" id="Hobby"name="dll"></pre>
-				<p align="center"><button type="submit">Simpan</button>
-				<button type="submit">Batal</button>
-				</p>
-	</form>
+					</td>
+				</tr>
+				<tr>
+					<td>Pendidikan</td>
+					<td><select name="pendidikan" id="pendidikan">
+						<option>Pilih</option>
+						<option>Tamat SD</option>
+						<option>Tamat SMP</option>
+						<option>Tamat SMA</option>
+						<option>Lulus S1/D3</option>
+						<option>Lulus S2</option>
+						<option>Lulus S3</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Motivasi Mengikuti Kompetisi</td>
+					<td> <textarea name="motivasi" id="motivasi"></textarea></td>	
+				</tr>
+				<tr></tr>
+					<br>
+					<td></td>
+					<td></td>
+				</tr>	
+			</table>
+			<input type="submit" name="submit" value="Kirim"><input type="reset" name="submit_2" value="Batal">
+		</form>
+	</div>
 </body>
 </html>
