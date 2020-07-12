@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upload Bukti Pembayaran</title>
+	<link rel="stylesheet" type="text/css" href="script.css">
+</head>
+<body>
+<div class="badan">
+	<h1>Upload Bukti Pembayaran</h1>
+	<table>
+			<form enctype="multipart/form-data" method="post" action="proses_bayar.php">
+				<table width="30%" align="center" style="border-collapse:collapse;"cellpadding="10">
+					<tr>
+						<td>File yang diupload : </td>
+						<td><input type="file" name="fupload"></td>
+					</tr>
+					<tr>
+						<td>Deskripsi File : </td>
+						<td><textarea name="deskripsi" rows="6" cols="20"></textarea></td>
+					</tr>
+				</table>
+				<br>
+				<input type="submit" name="submit" value="Upload">
+			</form>
+	</table>
+</div>
+</body>
+</html>
