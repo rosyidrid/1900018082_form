@@ -47,7 +47,7 @@
 			<?php } ?>
 		</table>
 		<br>
-		<button class="tombol"><a align="center" href="form_pendaftar.html">Daftar</a></button>
+		<button class="tombol"><a align="center" href="form.html">Daftar</a></button>
 	</div>
 </body>
 </html>
